@@ -1,0 +1,66 @@
+:root {
+    --cor-menu: black;
+    --cor-fundo: #FBFCFF;
+    --cor-texto: #180c09;
+    --cor-detalhe: #274156;
+    --cor-texto-input: rgb(45, 45, 65);
+    --cor-back-botao: black;
+};
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.form label {
+    color: var(--cor-texto);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form input[type="text"], .form input[type="password"], .form input[type="tel"], .form input[type="number"]{
+    padding: 10px;
+    width: 100%;
+    border: 1px var(--cor-detalhe) solid;
+    border-radius: 10px;
+    color: var(--cor-texto-input);
+    outline: none;
+}
+
+.estado {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px var(--cor-detalhe) solid;
+}
+
+.form > div {
+    margin: 10px;
+}
+
+.menu {
+    background-color: var(--cor-menu);
+    color: var(--cor-fundo);
+    padding: 20px;
+}
+
+.botao {
+    background-color: var(--cor-back-botao);
+    color: var(--cor-fundo);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.botao:hover {
+    opacity: 0.7;
+}
