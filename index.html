@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+
+    <!-- Link para css -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<!-- O atributo pattern especifica uma expressão regular com a qual o valor do elemento <input> é verificado no envio do formulário. 
+     O atributo max especifica o valor máximo para um elemento <input>.
+     O atributo min especifica o valor minímo para um elemento <input>.
+     O atributo input required especifica que um campo de entrada deve ser preenchido antes de enviar o formulário.
+    -->
+
+<body>
+    <nav class="menu">
+        <h1>Cadastro de jovens aprendizes</h1>
+    </nav>
+    <form class="form">
+        <div>
+            <div><label for="nomeCompleto">Nome completo</label></div>
+            <div><input type="text" id="nomeCompleto" maxlength="25"></div>
+        </div>
+        <div>
+            <div><label for="email">E-mail</label></div>
+            <div><input type="text" id="email" required></div>
+        </div>
+        <div>
+            <div><label for="senha">Senha</label></div>
+            <div><input type="password" id="senha" required pattern=".{12,}" title="Informe uma senha de 12 caracteres ou mais."></div>
+        </div>
+        <div>
+            <div><label for="cep">CEP</label></div>
+            <div><input type="text" id="cep" maxlength="8"></div>
+        </div>
+        <div>
+            <div><label for="estado">Estado:</label></div>
+            <div><input type="text" id="estado" pattern="[A-Za-z]{2}" title="Código do estado são 2 letras, exemplo: RO"></div>
+        </div>
+        <div>
+            <div><label for="cidade">Cidade</label></div>
+            <div><input type="text" id="cidade"></div>
+        </div>
+        <div>
+            <div><label for="logradouro">Logradouro</label></div>
+            <div><input type="text" id="logradouro"></div>
+        </div>
+        <div>
+            <div><label for="idade">Idade</label></div>
+            <div><input type="number" id="idade" min="14" max="25"></div>
+        </div>
+        <div>
+            <div>
+                <input type="checkbox" id="termo" required>
+                <label for="termo">Estou de acordo com os termos de serviço</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <input class="botao" type="submit" value="Cadastrar">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
